@@ -6,6 +6,13 @@ class Admin extends MY_Controller{
 		$user=$m->find(1);
 		var_dump($user);
 
+		$m=M('user');
+		var_dump($m);
+		$user=$m->find(1);
+		var_dump($user);
+		$user=$m->get_file();
+		var_dump($user);
+
 		// $this->load->model('a/user_model');
 		// $this->user_model->get_user();
 		// echo '<br/>';
