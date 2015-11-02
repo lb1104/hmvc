@@ -11,6 +11,7 @@ $config['modules_locations'] = array(
 ```
 
 扩展MY_Model,定义M函数,//application/helpers/model_helper.php  
+```php
 $m=M('user');//加载modules/models/User_model.php,不存在则返回new MY_Model('user');  
 //$m=M('admin/user');M('a/user');M('admin/a/user');//a/user为modules/models/a/User_model.php  
 $m->find(1);  
@@ -19,3 +20,4 @@ $m->get_file();
 $this->load->model('user_model');
 //$this->load->model('a/user_model');
 $this->user_model->get_file();
+```
