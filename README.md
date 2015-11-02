@@ -9,11 +9,13 @@ $config['modules_locations'] = array(
 	'../modules/',
 );
 ```
+/modules/moduleName/controllers/a/a/a/a/a/   
+/modules/moduleName/models/a/a/a/a/a/   
 
 扩展MY_Model,定义M函数,//application/helpers/model_helper.php  
 ```php
-$m=M('user');//加载modules/models/User_model.php,不存在则返回new MY_Model('user');  
-//$m=M('admin/user');M('a/user');M('admin/a/user');//a/user为modules/models/a/User_model.php  
+$m=M('user');//加载moduleName/models/User_model.php,不存在则返回new MY_Model('user');  
+//$m=M('admin/user');M('a/user');M('admin/a/user');//a/user为moduleName/models/a/User_model.php  
 $m->find(1);  
 $m->get_file();  
 //=
