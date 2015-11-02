@@ -1,23 +1,19 @@
 <?php
+(defined('BASEPATH')) OR exit('No direct script access allowed');
 
 /**
- * 项目公用controller
- * Created by PhpStorm.
- * User: li
- * Date: 15-10-9
- * Time: 下午4:18
- */
-
-
-/**
- * Class MY_Controller
+ * Base Controller Library
  *
- * @property CI_Loader     $load
- * @property CI_Output     $output
- * @property CI_Input      $input
- * @property CI_Log        $log
- * @property CI_Pagination $pagination
- * @property CI_Session    $session
+ * @package Controller
+ * @category Libraries
+ * @property CI_DB_active_record $db
+ * @property CI_Config $config
+ * @property CI_Controller $controller
+ * @property CI_Model $model
+ * @property CI_Loader $load
+ * @property CI_Session $session
+ * @property CI_Input $input
+ * @property CI_Output $output
  *
  */
 class MY_Controller extends CI_Controller

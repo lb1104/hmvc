@@ -1,10 +1,9 @@
 <?php
 class Admin extends MY_Controller{
 	function index(){
-		
 		echo __FILE__;
 	}
-	function show(){
-		print_r($this);
+	function a($b='0'){
+		echo 'admin/a'.$b;
 	}
 }

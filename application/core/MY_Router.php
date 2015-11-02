@@ -128,5 +128,8 @@ class MY_Router extends CI_Router {
         }
         
     }
+    function fetch_module(){
+        return $this->module;
+    }
     
 }
